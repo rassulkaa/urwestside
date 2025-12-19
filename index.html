@@ -35,6 +35,7 @@
 
     <main>
         <section id="hero">
+            <canvas id="particles"></canvas>
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <span class="subtitle fade-in">Западно-Казахстанская область</span>
@@ -44,6 +45,35 @@
                 <a href="#history" class="btn-outline fade-in delay-3">Исследовать места</a>
             </div>
         </section>
+        <section id="time-portal">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Портал Времени</h2>
+                    <p>Переместите ползунок, чтобы увидеть историю.</p>
+                </div>
+                <!-- Comparison Slider -->
+                <div class="comparison-wrapper">
+                    <div class="comparison-container">
+                        <div class="image-wrapper modern">
+                            <img src="assets/church.png" alt="Современный вид">
+                            <span class="img-label right">Сейчас</span>
+                        </div>
+                        <div class="image-wrapper historic">
+                            <img src="assets/church.png" alt="Исторический вид">
+                            <span class="img-label left">19 Век</span>
+                        </div>
+                        <div class="slider-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-circle">
+                                <span>&#8644;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="instruction-text">Потяните ползунок</p>
+                </div>
+            </div>
+        </section>
+
 
         <section id="history">
             <div class="container">

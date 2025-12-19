@@ -500,15 +500,14 @@ footer {
     width: 100%;
     max-width: 800px;
     height: 450px;
-    /* Fixed height for consistency */
+    margin: 0 auto;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(210, 161, 94, 0.3);
     user-select: none;
     cursor: col-resize;
-    /* Indicate draggable */
-    margin: 0 auto;
+    padding: 0;
 }
 
 .image-wrapper {
@@ -518,6 +517,10 @@ footer {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: block;
+    /* Ensure it's not inline */
 }
 
 .image-wrapper img {
@@ -538,6 +541,11 @@ footer {
     /* Initial state */
     z-index: 2;
     border-right: 2px solid var(--accent);
+    /* Ensure high specificity for position */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
 }
 
 /* Visual Filters for Historic Look */
